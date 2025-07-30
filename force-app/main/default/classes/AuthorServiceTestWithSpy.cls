@@ -99,8 +99,8 @@ private class AuthorServiceTestWithSpy {
     
     @IsTest 
     static void TestPublishBooksScope() {
-        Publisher__c publisher=BookStoreTestDataFactory.BuildPublisher('Leanpub');
-        Author__c author=BookStoreTestDataFactory.BuildAuthor('Keir Bowden', publisher.Id);
+        Publisher__c publisher=BookStoreTestDataFactory.CreatePublisher('Leanpub');
+        Author__c author=BookStoreTestDataFactory.CreateAuthor('Keir Bowden', publisher.Id);
 
         List<Book__c> books=new List<Book__c>();
 
