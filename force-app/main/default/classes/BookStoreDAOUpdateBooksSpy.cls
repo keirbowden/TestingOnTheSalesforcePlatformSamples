@@ -13,9 +13,13 @@ public class BookStoreDAOUpdateBooksSpy implements BookStoreDAOIF {
 
     public BookStoreDAOUpdateBooksSpy() {}
 
+    public void createBooks(List<Book__c> books) {}
+
     public void updateBooks(List<Book__c> books) {
         updateBooksHistory.add(new UpdateBooksSpyRecord(books));
     }
+
+    public void createAuthor(Author__c author) {}
 
     public void createAuthorReading(Author_Reading__c reading) {}
 
@@ -24,6 +28,10 @@ public class BookStoreDAOUpdateBooksSpy implements BookStoreDAOIF {
     public void createEvent(Event event){}
 
     public Author__c getAuthor(Id authorId) {
+        return null;
+    }
+
+    public List<Book__c> getBooksForAuthorName(String authorName) {
         return null;
     }
 }

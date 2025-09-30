@@ -1,3 +1,4 @@
+@isTest
 public with sharing class DiscountServiceStub implements DiscountServiceIF {
 
     private Integer discount;

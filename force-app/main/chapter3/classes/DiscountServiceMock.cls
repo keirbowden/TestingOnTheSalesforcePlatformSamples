@@ -1,3 +1,4 @@
+@isTest
 public with sharing class DiscountServiceMock {
     public Integer expectedCalculateDiscountCallCount=1;
     public Double expectedCalculateDiscountOppAmount=250000;

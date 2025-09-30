@@ -4,7 +4,7 @@ private class AuthorServiceTestWithMock {
     static void TestScheduleReadingDefaultVirtualReading() {
         Book__c book=BookStoreTestDataFactory.BuildBook('Testing on the Salesforce Platform',
                                         null, 'Technology', 190);
-        book.Id='a03JW00000oZqxvYAC';
+        book.Id=book.getSobjectType().getDescribe().getKeyPrefix() + '000000000001YAC';
 
         DateTime startDT=System.now().addHours(72);
         DateTime endDT=System.now().addHours(73);

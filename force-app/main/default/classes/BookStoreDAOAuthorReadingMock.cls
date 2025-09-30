@@ -43,7 +43,11 @@ public with sharing class BookStoreDAOAuthorReadingMock implements BookStoreDAOI
 
     public BookStoreDAOAuthorReadingMock() {}
 
+    public void createBooks(List<Book__c> books) {}
+
     public void updateBooks(List<Book__c> books) {}
+
+    public void createAuthor(Author__c author) {}
 
     public void createAuthorReading(Author_Reading__c reading) {
         createAuthorReadingHistory.add(new CreateAuthorReadingRecord(reading));
@@ -59,6 +63,10 @@ public with sharing class BookStoreDAOAuthorReadingMock implements BookStoreDAOI
 
     public Author__c getAuthor(Id authorId) {
         return new Author__c(Name='Keir Bowden');
+    }
+
+    public List<Book__c> getBooksForAuthorName(String authorName) {
+        return null;
     }
 
     public List<String> verify() {

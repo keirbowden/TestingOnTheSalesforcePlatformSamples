@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience_Level__c</fullName>
+    <description>The experience level of the user.</description>
+    <label>Experience Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Newbie</fullName>
+                <default>false</default>
+                <label>Newbie</label>
+            </value>
+            <value>
+                <fullName>Junior</fullName>
+                <default>false</default>
+                <label>Junior</label>
+            </value>
+            <value>
+                <fullName>Seasoned</fullName>
+                <default>false</default>
+                <label>Seasoned</label>
+            </value>
+            <value>
+                <fullName>Leet</fullName>
+                <default>false</default>
+                <label>Leet</label>
+            </value>
+            <value>
+                <fullName>Craftsman</fullName>
+                <default>false</default>
+                <label>Craftsman</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

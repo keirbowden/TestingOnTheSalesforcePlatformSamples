@@ -10,7 +10,7 @@ private class PushOpportunityTest {
         PushOpportunity.PushCloseDateOut1Week(testOpp);
     }
 
-        static testMethod void TestPushCloseDateOut1Week()
+    static testMethod void TestPushCloseDateOut1Week()
     {
         Date origDate=System.today();
         Date expectedDate=origDate.addDays(7);

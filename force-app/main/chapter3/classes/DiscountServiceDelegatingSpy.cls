@@ -1,3 +1,4 @@
+@isTest
 public class DiscountServiceDelegatingSpy implements DiscountServiceIF {
 
     public class CalculateDiscountSpyRecord {
