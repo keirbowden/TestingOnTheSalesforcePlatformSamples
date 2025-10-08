@@ -90,7 +90,7 @@ private class ScheduledNeglectedLeadsProcessingTest {
         try {
 		    System.schedule('ScheduledNeglectedLeadsProcessingTest',  GetFutureCronStr(),
                                 new ScheduledNeglectedLeadsProcessing(null));
-            Assert.fail('Constructing scheduled class with 0 batch size should throw exception');
+            Assert.fail('Constructing scheduled class with null batch size should throw exception');
         }
         catch (NeglectedLeadsException nle) {
             // expected
